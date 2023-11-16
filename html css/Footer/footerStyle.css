@@ -8,23 +8,28 @@ body {
 }
 
 #placeholder {
-  width: 1600px;
+  width: 1400px;
   margin : auto;
 }
 
-footer {
+#fBlock {
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
   list-style-type: none;
   margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
+}
+
+footer {
   background-color: #202020;
 }
 
 .fplan {
   border: 0px solid;
-  padding: 15px;
-  padding-left: 30px;
+   /* padding: 15px;
+  padding-left: 30px; */
   color: red;
   font-size: 18px;
   text-align: left;

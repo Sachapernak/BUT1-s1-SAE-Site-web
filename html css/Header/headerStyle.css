@@ -13,13 +13,11 @@ body {
     background-color: #FFFFFF;
 }
 #hLigne1 {
-    
 
-    
     display: grid;
     grid-template-columns: 50% 20% 30%;
     grid-template-rows: 100%;
-    width: 1600px;
+    width: 1400px;
     margin-left: auto;
     margin-right: auto;
 
@@ -31,7 +29,7 @@ body {
 }
 
 #hLigne2 {
-    width: 1600px;
+    width: 1400px;
     margin-left: auto;
     margin-right: auto;
 }
