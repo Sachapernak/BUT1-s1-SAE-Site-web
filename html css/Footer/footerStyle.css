@@ -1,5 +1,15 @@
 body {
   margin: 0%;
+  font: 400 16px "Open Sans", Arial, "Helvetica Neue", Helvetica, "Bitstream Vera Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, "Bitstream Vera Sans", sans-serif;
+}
+
+#placeholder {
+  width: 1600px;
+  margin : auto;
 }
 
 footer {
