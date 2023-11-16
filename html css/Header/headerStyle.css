@@ -1,14 +1,68 @@
+body {
+    background-color: F5F5F5;
+    margin: 0;
+    font: 400 16px "Open Sans", Arial, "Helvetica Neue", Helvetica, "Bitstream Vera Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, "Bitstream Vera Sans", sans-serif;
+}
+
+#hLigne1bgr {
+    margin: 0;
+    background-color: #FFFFFF;
+}
+#hLigne1 {
+    
+
+    
+    display: grid;
+    grid-template-columns: 50% 20% 30%;
+    grid-template-rows: 100%;
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+
+#hLigne2bgr {
+    background-color: #FF3A39;
+}
+
+#hLigne2 {
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hLeft{
+    grid-column-start: 1;
+    margin : O; 
+}
+#hRight{
+    text-align: right;
+    grid-column-start: 3;
+    margin : O; 
+}
+.hLogo {
+    display : inline-flex;
+    height : 80px;
+    width: auto;
+    
+}
+
+
+
 .hNav-Area ul{
     list-style: none;
-    margin: 0 20px 0 20px; /* a modifier pour se caler sur la page */
+    margin : 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
 }
 
 .hNav-Area ul {
-    border:solid 2px;
-    border-color: #000000;
     background-color: #FF3A39;
 }
 
@@ -38,13 +92,15 @@
 .hNav-Area a {
     display:block; /* pour qu'ils prennent toutes leurs largeur */
     background-color: #FFFFFF;
-    padding: 15px;
+    padding: 10px;
     margin:5px;
     color:#000000;
     text-decoration: none;
     text-align: center;
-    border:solid 2px;
-    border-color: #000000;
+    border:solid 1px;
+    border-color: #5A0000;
+    border-radius: 3px;
+    font-size: 0.9rem;
 }
 
 .hNav-Area a:hover {
