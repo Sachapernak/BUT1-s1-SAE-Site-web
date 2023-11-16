@@ -1,0 +1,29 @@
+.hNav-Area ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hNav-Area ul li{
+    width: 25%;
+}
+
+.hNav-Area ul li > ul{
+    display: none;
+    flex-direction: column;
+}
+
+.hNav-Area ul li > ul li{
+    width: 100%;
+}
+
+.hNav-Area ul li > ul{
+    display: flex;
+}
+
+.hNav-Area a {
+    display:block; /* pour qu'ils prennent toutes leurs largeur */
+    background-color: yellow;
+}
