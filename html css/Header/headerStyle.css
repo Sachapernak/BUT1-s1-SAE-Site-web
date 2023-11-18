@@ -26,12 +26,16 @@ body {
 
 #hLigne2bgr {
     background-color: #FF3A39;
+    position: absolute;
+    width: 100%;
+    height: 50px; 
 }
 
 #hLigne2 {
     width: 1400px;
     margin-left: auto;
     margin-right: auto;
+    height: 100%;
 }
 
 #hLeft{
@@ -58,10 +62,6 @@ body {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-}
-
-.hNav-Area ul {
-    background-color: #FF3A39;
 }
 
 .hNav-Area ul li{
