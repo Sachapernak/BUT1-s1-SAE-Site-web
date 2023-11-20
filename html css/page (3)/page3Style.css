@@ -1,0 +1,135 @@
+.p3Decorateur {
+    border-bottom: 2px solid black; 
+    margin: 20px 0; 
+  }
+
+  .p3BigBlock{
+    border:3px solid black;
+    padding:15px;
+  }
+
+.p3LittleBlock{
+    border:1.5px solid black;
+    padding:10px;
+    margin:4px;
+    width:100%;
+  }
+
+
+.p3Title{
+  text-align: center;
+}
+
+.p3FondPage{
+  background-color: #F5F5F5;
+}
+
+.p3AC{
+    display:flex;
+    align-content: flex-start;
+}
+.p3PicAC{
+    flex-shrink:1;
+    width:200px;
+    height: 270px; 
+    position:relative;
+}
+
+.p3PicAC img{
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+}
+
+.p3DescAC{
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 100%;
+}
+
+.p3ACL1{
+  grid-column-start: 1;
+}
+.p3ACL2{
+  grid-column-start: 2;
+}
+.p3ACL3{
+  grid-column-start: 3;
+}
+
+.p3Evaluation{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.p3EvalTitre{
+  font-weight: bold;
+  font-size: large;
+}
+
+.p3EvalTabCoeff{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.p3EvalTabCoeff td, .p3EvalTabCoeff th {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: left;
+}
+
+.p3SAE{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.p3ListeRessource{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.p3TitreRessource {
+    display: flex; /* Utilisation de Flexbox pour contrôler la disposition */
+    align-items: center; /* Alignement vertical */
+    width:100%;
+  }
+
+.p3TitreRessourc >.p3LittleBlockBG:nth-of-type(0){
+  flex-grow: 1;
+}
+
+.p3NomRessource{
+  flex:1;
+}
+.p3hautDePage{
+  text-align: center;
+}
+
+.p3EncadrerRessource{
+  border:2px solid #4F619D;
+  padding:15px;
+  margin:4px;
+  width:100%;
+}
+
+.p3LittleBlockBG{
+  border:1.5px solid black;
+  padding:10px;
+  margin:4px;
+  background-color:#525659;
+  color:#FFFFFF;
+  flex-grow:1;
+}
+
+.p3TitreRessource>.p3LittleBlock
+{
+  flex-grow: 3;
+}
+
+.p3EncadrerRessource > .p3LittleBlock 
+{ 
+  width:auto;
+}
+
+.p3EvalTabCoeff>tbody>tr:nth-child(odd){
+  background-color: #E8C5BB;
+}
