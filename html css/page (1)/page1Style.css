@@ -138,28 +138,26 @@ body {
     grid-template-columns: 12% 88%;
     grid-template-rows: 100%;
     max-width: 1400px;
-    background-color: white;
+    background-color: #ffffff;
     margin-left: auto;
     margin-right: auto;
     margin-top : 4px;
     margin-bottom: 4px;
-    border: solid 3px;
+    border: none 3px;
     border-color: #141414;
     border-radius: 3px;
 }
 
 #p1iut {
     
-    display: grid;
-    grid-template-columns: 18% 82%;
-    grid-template-rows: 100%;
+    display : flex;
     max-width: 1400px;
     background-color: white;
     margin-left: auto;
     margin-right: auto;
     margin-top : 4px;
     margin-bottom: 4px;
-    border: solid 3px;
+    border: none 3px;
     border-color: #141414;
     border-radius: 3px;
 }
@@ -197,7 +195,7 @@ body {
     margin-right: auto;
     margin-top: 8px;
     margin-bottom: 8px;
-    background-color: #303030;
+    background-color: #979595;
 }
 
 #p1contact {
@@ -229,16 +227,17 @@ body {
     list-style-type: none;
 }
 .p1imgB {
-    max-width: 95%;
-    height: auto;
-    margin : 2px
+    
 }
-
+.p1leftB {
+  width: 400px;
+  
+}
 #p1comp{
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
-    border: solid 3px;
+    border: none 3px;
     border-color: #141414;
     border-radius: 3px;
 }
@@ -248,7 +247,7 @@ body {
     grid-template-rows: 100%;
     background-color: white;
     margin : 10px;
-    border: solid 3px;
+    border: none 3px;
     border-color: #141414;
     border-radius: 3px;
 
@@ -264,7 +263,7 @@ body {
     margin-right: auto;
     margin-top : 4px;
     margin-bottom: 4px;
-    border: solid 3px;
+    border: none 3px;
     border-color: #141414;
     border-radius: 3px;
 }
