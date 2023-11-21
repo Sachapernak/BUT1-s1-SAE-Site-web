@@ -1,15 +1,17 @@
 body {
   margin: 0%;
-  font: 400 16px "Open Sans", Arial, "Helvetica Neue", Helvetica, "Bitstream Vera Sans", sans-serif;
+  font: 400 16px "Open Sans", Arial, "Helvetica Neue", Helvetica,
+    "Bitstream Vera Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, "Bitstream Vera Sans", sans-serif;
+  font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica,
+    "Bitstream Vera Sans", sans-serif;
 }
 
 #placeholder {
   width: 1400px;
-  margin : auto;
+  margin: auto;
 }
 
 #fBlock {
@@ -28,9 +30,9 @@ footer {
 
 .fplan {
   border: 0px solid;
-   /* padding: 15px;
+  /* padding: 15px;
   padding-left: 30px; */
-  color: red;
+  color: #ff3a39;
   font-size: 18px;
   text-align: left;
   margin-top: auto;

@@ -1,11 +1,14 @@
+body{
+  background-color: #F5F5F5;
+}
 .p3Decorateur {
-    border-bottom: 2px solid black; 
+    border-bottom: 2px solid #FF3A39; 
     margin: 20px 0; 
   }
 
   .p3BigBlock{
-    border:3px solid black;
     padding:15px;
+    background-color: #FFFFFF;
   }
 
 .p3LittleBlock{
@@ -13,6 +16,7 @@
     padding:10px;
     margin:4px;
     width:100%;
+    background-color: #F5F5F5;
   }
 
 
@@ -21,7 +25,8 @@
 }
 
 .p3FondPage{
-  background-color: #F5F5F5;
+  max-width:1400px;
+  margin:auto;
 }
 
 .p3AC{
@@ -30,8 +35,7 @@
 }
 .p3PicAC{
     flex-shrink:1;
-    width:200px;
-    height: 270px; 
+    height: 100%; 
     position:relative;
 }
 
@@ -42,10 +46,19 @@
 }
 
 .p3DescAC{
+  display:grid;
   grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 100%;
+  grid-template-rows: 20% 90%;
 }
-
+.p3TitleAC{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+}
 .p3ACL1{
   grid-column-start: 1;
 }
@@ -78,8 +91,15 @@
 }
 
 .p3SAE{
-    display: flex;
-    flex-wrap: wrap;
+  display: flex; /* Utilisation de Flexbox pour contrôler la disposition */
+  align-items: center; /* Alignement vertical */
+  width:100%;
+  flex-direction: column;
+}
+
+.p3NomSAE{
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .p3ListeRessource{
@@ -104,20 +124,11 @@
   text-align: center;
 }
 
-.p3EncadrerRessource{
-  border:2px solid #4F619D;
+.p3Comp1EncadrerRessource{
+  border:2px solid #E8C5BB;
   padding:15px;
   margin:4px;
   width:100%;
-}
-
-.p3LittleBlockBG{
-  border:1.5px solid black;
-  padding:10px;
-  margin:4px;
-  background-color:#525659;
-  color:#FFFFFF;
-  flex-grow:1;
 }
 
 .p3TitreRessource>.p3LittleBlock
@@ -125,11 +136,37 @@
   flex-grow: 3;
 }
 
-.p3EncadrerRessource > .p3LittleBlock 
+.p3Comp1EncadrerRessource > .p3LittleBlock 
 { 
   width:auto;
 }
+.p3Comp1EvalTabCoeff{
+  border-collapse: collapse;
+  width: 100%; 
+}
 
-.p3EvalTabCoeff>tbody>tr:nth-child(odd){
+.p3Comp1EvalTabCoeff td, .p3Comp1EvalTabCoeff tr {
+  border: 1px solid #000; /* Bordure de 1 pixel solide, noir */
+  padding: 8px; /* Espacement à l'intérieur des cellules */
+  text-align: left; /* Alignement du texte à gauche */
+}
+
+.p3Comp1EvalTabCoeff>tbody>tr:nth-child(odd){
   background-color: #E8C5BB;
+}
+
+
+
+.p3Comp1Strong {
+  color:#D08A77;
+  font-size: large;
+}
+
+.p3Comp1LittleBlockBG{
+  background-color:#D08A77;
+  border:1.5px solid black;
+  padding:10px;
+  margin:4px;
+  color:#FFFFFF;
+  flex-grow:1;
 }
