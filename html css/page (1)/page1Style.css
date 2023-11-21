@@ -16,7 +16,7 @@ header {
     display: grid;
     grid-template-columns: 50% 20% 30%;
     grid-template-rows: 100%;
-    width: 1400px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -29,7 +29,7 @@ header {
   }
   
   #hLigne2 {
-    width: 1400px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
     height: 100%;
@@ -137,7 +137,7 @@ body {
     display: grid;
     grid-template-columns: 12% 88%;
     grid-template-rows: 100%;
-    width: 1400px;
+    max-width: 1400px;
     background-color: white;
     margin-left: auto;
     margin-right: auto;
@@ -149,10 +149,11 @@ body {
 }
 
 #p1iut {
+    
     display: grid;
     grid-template-columns: 18% 82%;
     grid-template-rows: 100%;
-    width: 1400px;
+    max-width: 1400px;
     background-color: white;
     margin-left: auto;
     margin-right: auto;
@@ -178,19 +179,20 @@ body {
     display: block;
 }
 .p1imgA {
-    margin-left: auto;
+    margin-left: 1em;
     margin-right: auto;
-    margin-top : 4px;
-    margin-bottom: 4px;
+    margin-top : auto;
+    margin-bottom: auto;
     display: inline-flex;
-    max-width: 80%;
-    height: auto;
+    max-width: 90%;
+    max-height : 90%;
+    
 }
 
 .p1separateur {
     
     height: 2px;
-    width : 1400px;
+    max-width : 1400px;
     margin-left : auto;
     margin-right: auto;
     margin-top: 8px;
@@ -281,6 +283,26 @@ body {
     display: inline-flex;
 }
 
+.p1imgA {
+  margin-left: 1em;
+  margin-right: auto;
+  margin-top : auto;
+  margin-bottom: auto;
+  display: inline-flex;
+  max-width: 90%;
+  max-height : 90%;
+  
+}.p1img2 {
+    margin-left: auto;
+    margin-right: 1em;
+    margin-top : auto;
+    margin-bottom: auto;
+    display: inline-flex;
+    max-width: 90%;
+    max-height : 90%;
+    
+}
+
 
 /* 
 FOOTER
@@ -290,7 +312,7 @@ FOOTER
  */
 
  #fBlock {
-    width: 1400px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
     list-style-type: none;
