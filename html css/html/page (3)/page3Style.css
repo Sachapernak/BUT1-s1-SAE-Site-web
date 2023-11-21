@@ -1,0 +1,172 @@
+body{
+  background-color: #F5F5F5;
+}
+.p3Decorateur {
+    border-bottom: 2px solid #FF3A39; 
+    margin: 20px 0; 
+  }
+
+  .p3BigBlock{
+    padding:15px;
+    background-color: #FFFFFF;
+  }
+
+.p3LittleBlock{
+    border:1.5px solid black;
+    padding:10px;
+    margin:4px;
+    width:100%;
+    background-color: #F5F5F5;
+  }
+
+
+.p3Title{
+  text-align: center;
+}
+
+.p3FondPage{
+  max-width:1400px;
+  margin:auto;
+}
+
+.p3AC{
+    display:flex;
+    align-content: flex-start;
+}
+.p3PicAC{
+    flex-shrink:1;
+    height: 100%; 
+    position:relative;
+}
+
+.p3PicAC img{
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+}
+
+.p3DescAC{
+  display:grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 20% 90%;
+}
+.p3TitleAC{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+}
+.p3ACL1{
+  grid-column-start: 1;
+}
+.p3ACL2{
+  grid-column-start: 2;
+}
+.p3ACL3{
+  grid-column-start: 3;
+}
+
+.p3Evaluation{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.p3EvalTitre{
+  font-weight: bold;
+  font-size: large;
+}
+
+.p3EvalTabCoeff{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.p3EvalTabCoeff td, .p3EvalTabCoeff th {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: left;
+}
+
+.p3SAE{
+  display: flex; /* Utilisation de Flexbox pour contrôler la disposition */
+  align-items: center; /* Alignement vertical */
+  width:100%;
+  flex-direction: column;
+}
+
+.p3NomSAE{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.p3ListeRessource{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.p3TitreRessource {
+    display: flex; /* Utilisation de Flexbox pour contrôler la disposition */
+    align-items: center; /* Alignement vertical */
+    width:100%;
+  }
+
+.p3TitreRessourc >.p3LittleBlockBG:nth-of-type(0){
+  flex-grow: 1;
+}
+
+.p3NomRessource{
+  flex:1;
+}
+.p3hautDePage{
+  text-align: center;
+}
+
+.p3Comp1EncadrerRessource{
+  border:2px solid #E8C5BB;
+  padding:15px;
+  margin:4px;
+  width:100%;
+}
+
+.p3TitreRessource>.p3LittleBlock
+{
+  flex-grow: 3;
+}
+
+.p3Comp1EncadrerRessource > .p3LittleBlock 
+{ 
+  width:auto;
+}
+.p3Comp1EvalTabCoeff{
+  border-collapse: collapse;
+  width: 100%; 
+}
+
+.p3Comp1EvalTabCoeff td, .p3Comp1EvalTabCoeff tr {
+  border: 1px solid #000; /* Bordure de 1 pixel solide, noir */
+  padding: 8px; /* Espacement à l'intérieur des cellules */
+  text-align: left; /* Alignement du texte à gauche */
+}
+
+.p3Comp1EvalTabCoeff>tbody>tr:nth-child(odd){
+  background-color: #E8C5BB;
+}
+
+
+
+.p3Comp1Strong {
+  color:#D08A77;
+  font-size: large;
+}
+
+.p3Comp1LittleBlockBG{
+  background-color:#D08A77;
+  border:1.5px solid black;
+  padding:10px;
+  margin:4px;
+  color:#FFFFFF;
+  flex-grow:1;
+}
