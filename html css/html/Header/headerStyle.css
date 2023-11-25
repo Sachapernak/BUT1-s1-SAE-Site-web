@@ -22,7 +22,7 @@ header {
   display: grid;
   grid-template-columns: 50% 20% 30%;
   grid-template-rows: 100%;
-  width: 1400px;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -35,7 +35,7 @@ header {
 }
 
 #hLigne2 {
-  width: 1400px;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   height: 100%;
