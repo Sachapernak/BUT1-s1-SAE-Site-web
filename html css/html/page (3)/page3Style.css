@@ -1,5 +1,120 @@
-body{
+body {
   background-color: #F5F5F5;
+  margin: 0;
+  font: 400 16px "Open Sans", Arial, "Helvetica Neue", Helvetica,
+    "Bitstream Vera Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica,
+    "Bitstream Vera Sans", sans-serif;
+}
+
+header {
+  margin-bottom: 100px;
+}
+
+#hLigne1bgr {
+  margin: 0;
+  background-color: #ffffff;
+}
+#hLigne1 {
+  display: grid;
+  grid-template-columns: 50% 20% 30%;
+  grid-template-rows: 100%;
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#hLigne2bgr {
+  background-color: #ff3a39;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+}
+
+#hLigne2 {
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+
+#hLeft {
+  grid-column-start: 1;
+  margin: O;
+}
+#hRight {
+  text-align: right;
+  grid-column-start: 3;
+  margin: O;
+}
+.hLogo {
+  display: inline-flex;
+  height: 80px;
+  width: auto;
+}
+
+.hNav-Area ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hNav-Area ul li {
+  width: 25%;
+}
+
+.hNav-Area ul li > ul {
+  display: none;
+  flex-direction: column;
+  margin: 0;
+  border: none;
+}
+
+.hNav-Area ul li > ul li > a {
+  /* mettre le margin / la bordure sur les sous blocs ( competences 1 / 2 ) */
+  margin: 0 6px 3px 6px;
+}
+
+.hNav-Area ul li > ul li {
+  width: 100%;
+}
+
+.hNav-Area ul li:hover > ul {
+  display: flex;
+}
+
+.hNav-Area a {
+  display: block; /* pour qu'ils prennent toutes leurs largeur */
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 5px;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  border: solid 1px;
+  border-color: #5a0000;
+  border-radius: 3px;
+  font-size: 0.9rem;
+}
+
+.hNav-Area a:hover {
+  background-color: #ff9292;
+  color: #ffffff;
+}
+
+.hNav-Area .hDropDown li > a {
+  background-color: #cccccc;
+  color: #000000;
+}
+
+.hNav-Area .hDropDown li > a:hover {
+  background-color: #ff9292;
+  color: #ffffff;
 }
 .p3Decorateur {
     border-bottom: 2px solid #FF3A39; 
@@ -11,6 +126,75 @@ body{
     background-color: #FFFFFF;
   }
 
+  #placeholder {
+  width: 1400px;
+  margin: auto;
+}
+
+#fBlock {
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer {
+  background-color: #202020;
+}
+
+.fplan {
+  border: 0px solid;
+  /* padding: 15px;
+  padding-left: 30px; */
+  color: #ff3a39;
+  font-size: 18px;
+  text-align: left;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.fplan a {
+  color: #ff3a39;
+  text-decoration: none;
+}
+
+.fplan a:hover {
+  color: white;
+}
+
+.fcnil {
+  border: 0px solid;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+}
+
+.fcnil a {
+  color: #ff3a39;
+  text-decoration: none;
+}
+
+.fcnil a:hover {
+  color: #ffffff;
+}
+
+.fentreprise {
+  border: 0px solid;
+  padding: 15px;
+  color: #ffffff;
+  text-align: right;
+}
+
+.fTitre {
+  color: #ff3a39;
+  font-size: 20px;
+}
+
+
 .p3LittleBlock{
     border:1.5px solid black;
     padding:10px;
@@ -18,7 +202,6 @@ body{
     width:100%;
     background-color: #F5F5F5;
   }
-
 
 .p3Title{
   text-align: center;
@@ -33,9 +216,30 @@ body{
     display:flex;
     align-content: flex-start;
 }
+
+@media screen and (max-width: 800px) and (min-width: 499px) {
+  .p3AC{
+    flex-flow: column;
+  }
+  .p3PicAC {
+      flex-shrink: 1;
+      height: 100%;
+      width:50%;
+      position: relative;
+  }
+  .p3LittleBlock{
+    width:95%;
+    margin:auto;
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+  }
+}
+
 .p3PicAC{
     flex-shrink:1;
-    height: 100%; 
+    height: 100%;    
+    margin : auto;
     position:relative;
 }
 
@@ -48,7 +252,8 @@ body{
 .p3DescAC{
   display:grid;
   grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 20% 90%;
+  grid-template-rows: 20% 80%;
+  margin:auto;
 }
 .p3TitleAC{
   grid-column-start: 1;
@@ -124,6 +329,8 @@ body{
   text-align: center;
 }
 
+/* Compétence 1 */
+
 .p3Comp1EncadrerRessource{
   border:2px solid #E8C5BB;
   padding:15px;
@@ -146,16 +353,14 @@ body{
 }
 
 .p3Comp1EvalTabCoeff td, .p3Comp1EvalTabCoeff tr {
-  border: 1px solid #000; /* Bordure de 1 pixel solide, noir */
-  padding: 8px; /* Espacement à l'intérieur des cellules */
-  text-align: left; /* Alignement du texte à gauche */
+  border: 1px solid #000; 
+  padding: 8px;
+  text-align: left; 
 }
 
 .p3Comp1EvalTabCoeff>tbody>tr:nth-child(odd){
   background-color: #E8C5BB;
 }
-
-
 
 .p3Comp1Strong {
   color:#D08A77;
@@ -170,3 +375,218 @@ body{
   color:#FFFFFF;
   flex-grow:1;
 }
+
+/* Compétence 2 */
+
+.p3Comp2EncadrerRessource{
+  border:2px solid #FFB7A6;
+  padding:15px;
+  margin:4px;
+  width:100%;
+}
+
+
+.p3Comp2EncadrerRessource > .p3LittleBlock 
+{ 
+  width:auto;
+}
+.p3Comp2EvalTabCoeff{
+  border-collapse: collapse;
+  width: 100%; 
+}
+
+.p3Comp2EvalTabCoeff td, .p3Comp2EvalTabCoeff tr {
+  border: 1px solid #000; 
+  padding: 8px; 
+  text-align: left; 
+}
+
+.p3Comp2EvalTabCoeff>tbody>tr:nth-child(odd){
+  background-color: #FFB7A6;
+}
+
+
+.p3Comp2Strong {
+  color:#FF6F4C;
+  font-size: large;
+}
+
+.p3Comp2LittleBlockBG{
+  background-color:#FF6F4C;
+  border:1.5px solid black;
+  padding:10px;
+  margin:4px;
+  color:#FFFFFF;
+  flex-grow:1;
+}
+
+/* Compétence 3 */
+
+.p3Comp3EncadrerRessource{
+  border:2px solid #FEE7A0;
+  padding:15px;
+  margin:4px;
+  width:100%;
+}
+
+.p3Comp3EncadrerRessource > .p3LittleBlock 
+{ 
+  width:auto;
+}
+.p3Comp3EvalTabCoeff{
+  border-collapse: collapse;
+  width: 100%; 
+}
+
+.p3Comp3EvalTabCoeff td, .p3Comp3EvalTabCoeff tr {
+  border: 1px solid #000; 
+  padding: 8px;
+  text-align: left; 
+}
+
+.p3Comp3EvalTabCoeff>tbody>tr:nth-child(odd){
+  background-color: #FEE7A0;
+}
+
+.p3Comp3Strong {
+  color:#FDCF41;
+  font-size: large;
+}
+
+.p3Comp3LittleBlockBG{
+  background-color:#FDCF41;
+  border:1.5px solid black;
+  padding:10px;
+  margin:4px;
+  color:#FFFFFF;
+  flex-grow:1;
+}
+
+/* Compétence 4 */
+
+.p3Comp4EncadrerRessource{
+  border:2px solid #C8D6A7;
+  padding:15px;
+  margin:4px;
+  width:100%;
+}
+
+.p3Comp4EncadrerRessource > .p3LittleBlock 
+{ 
+  width:auto;
+}
+.p3Comp4EvalTabCoeff{
+  border-collapse: collapse;
+  width: 100%; 
+}
+
+.p3Comp4EvalTabCoeff td, .p3Comp4EvalTabCoeff tr {
+  border: 1px solid #000; 
+  padding: 8px; 
+  text-align: left; 
+}
+
+.p3Comp4EvalTabCoeff>tbody>tr:nth-child(odd){
+  background-color: #C8D6A7;
+}
+
+.p3Comp4Strong {
+  color:#91AE4F;
+  font-size: large;
+}
+
+.p3Comp4LittleBlockBG{
+  background-color:#91AE4F;
+  border:1.5px solid black;
+  padding:10px;
+  margin:4px;
+  color:#FFFFFF;
+  flex-grow:1;
+}
+
+/* Compétence 5 */
+
+.p3Comp5EncadrerRessource{
+  border:2px solid #ABB7DF;
+  padding:15px;
+  margin:4px;
+  width:100%;
+}
+
+.p3Comp5EncadrerRessource > .p3LittleBlock 
+{ 
+  width:auto;
+}
+.p3Comp5EvalTabCoeff{
+  border-collapse: collapse;
+  width: 100%; 
+}
+
+.p3Comp5EvalTabCoeff td, .p3Comp5EvalTabCoeff tr {
+  border: 1px solid #000; 
+  padding: 8px; 
+  text-align: left; 
+}
+
+.p3Comp5EvalTabCoeff>tbody>tr:nth-child(odd){
+  background-color: #ABB7DF;
+}
+
+.p3Comp5Strong {
+  color:#5770BE;
+  font-size: large;
+}
+
+.p3Comp5LittleBlockBG{
+  background-color:#5770BE;
+  border:1.5px solid black;
+  padding:10px;
+  margin:4px;
+  color:#FFFFFF;
+  flex-grow:1;
+}
+
+/* Compétence 6 */
+
+.p3Comp6EncadrerRessource{
+  border:2px solid #D0B3AC;
+  padding:15px;
+  margin:4px;
+  width:100%;
+}
+
+.p3Comp6EncadrerRessource > .p3LittleBlock 
+{ 
+  width:auto;
+}
+.p3Comp6EvalTabCoeff{
+  border-collapse: collapse;
+  width: 100%; 
+}
+
+.p3Comp6EvalTabCoeff td, .p3Comp6EvalTabCoeff tr {
+  border: 1px solid #000; 
+  padding: 8px; 
+  text-align: left; 
+}
+
+.p3Comp6EvalTabCoeff>tbody>tr:nth-child(odd){
+  background-color: #D0B3AC;
+}
+
+.p3Comp6Strong {
+  color:#A26859;
+  font-size: large;
+}
+
+.p3Comp6LittleBlockBG{
+  background-color:#A26859;
+  border:1.5px solid black;
+  padding:10px;
+  margin:4px;
+  color:#FFFFFF;
+  flex-grow:1;
+}
+
+
+
