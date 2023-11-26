@@ -217,14 +217,32 @@ footer {
     align-content: flex-start;
 }
 
-@media screen and (max-width: 800px) and (min-width: 399px) {
+@media screen and (max-width: 599px) and (min-width: 399px) {
   .p3AC{
     flex-flow: column;
   }
   .p3PicAC {
       flex-shrink: 1;
       height: 100%;
-      width:100%;
+      width:50%;
+      position: relative;
+  }
+  .p3LittleBlock{
+    width:95%;
+    margin:auto;
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .p3AC{
+    flex-flow: column;
+  }
+  .p3PicAC {
+      flex-shrink: 1;
+      height: 100%;
+      width:30%;
       position: relative;
   }
   .p3LittleBlock{
