@@ -31,7 +31,7 @@ header {
   background-color: #ff3a39;
   position: absolute;
   width: 100%;
-  height: 50px;
+  height: 7%;
 }
 
 #hLigne2 {
@@ -115,4 +115,10 @@ header {
 .hNav-Area .hDropDown li > a:hover {
   background-color: #ff9292;
   color: #ffffff;
+}
+
+@media (max-width:735px) {
+  .hNav-Area ul li{
+    width:100%;
+  }
 }

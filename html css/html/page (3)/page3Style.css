@@ -43,12 +43,12 @@ header {
 
 #hLeft {
   grid-column-start: 1;
-  margin: O;
+  margin: 0;
 }
 #hRight {
   text-align: right;
   grid-column-start: 3;
-  margin: O;
+  margin: 0;
 }
 .hLogo {
   display: inline-flex;
@@ -217,14 +217,14 @@ footer {
     align-content: flex-start;
 }
 
-@media screen and (max-width: 800px) and (min-width: 499px) {
+@media screen and (max-width: 800px) and (min-width: 399px) {
   .p3AC{
     flex-flow: column;
   }
   .p3PicAC {
       flex-shrink: 1;
       height: 100%;
-      width:50%;
+      width:100%;
       position: relative;
   }
   .p3LittleBlock{
