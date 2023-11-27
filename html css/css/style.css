@@ -163,6 +163,15 @@
     border-radius: 3px;
 }
 
+.p1bold {
+  font-weight: bold;
+  font-size:medium;  
+}
+.p1bold2 {
+  font-weight: bold;
+  font-size:medium; 
+  color :  #a82525;
+}
 
 .p1left {
     text-align: center;
@@ -200,7 +209,7 @@
 }
 
 #p1contact {
-    margin : 0;
+    margin : 1em;
     display: grid;
     grid-template-columns: 15% 35% 50%;
     grid-template-rows: 100%;
