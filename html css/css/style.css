@@ -572,12 +572,25 @@ td {
   width: 100%;
 }
 
-#fBlock {
-  width: 1400px;
+body {
+  margin: 0%;
+  font: 400 "Open Sans", Arial, "Helvetica Neue", Helvetica,
+    "Bitstream Vera Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica,
+    "Bitstream Vera Sans", sans-serif;
+}
+
+/* ---------------------------------- p4 FOOTER ---------------------------------- */
+
+.fBlock {
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   list-style-type: none;
-  margin-top: 20px;
+  margin-top: 3em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -587,7 +600,6 @@ footer {
 }
 
 .fplan {
-  border: 0px solid;
   color: #ff3a39;
   font-size: 18px;
   text-align: left;
@@ -605,10 +617,10 @@ footer {
 }
 
 .fcnil {
-  border: 0px solid;
-  padding: 10px;
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: auto;
-  text-align: center;
 }
 
 .fcnil a {
@@ -621,55 +633,57 @@ footer {
 }
 
 .fentreprise {
-  border: 0px solid;
-  padding: 15px;
-  padding-right: 20px;
+  padding: 1em;
   color: #ffffff;
   text-align: right;
 }
 
 .fTitre {
   color: #ff3a39;
-  font-size: 20px;
 }
 
-@media screen and (max-width: 1500px) {
-  .ctout {
-    margin: 50px 100px;
-  }
-
-  footer {
-    margin: 50px 100px;
-    padding: 0 20px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .cmessage {
-    display: block;
-  }
-
-  .cformulairedroite input {
-    display: none;
-  }
-
-  .cformulaire {
+@media screen and (max-width: 750px) {
+  .fBlock {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+    margin-top: 3em;
     display: grid;
     grid-template-columns: 1fr;
+    padding: 10px 30px;
+  }
+  .fplan {
+    color: #ff3a39;
+    font-size: 18px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    grid-row-start: 1;
+  }
+  .fcnil {
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    grid-row-start: 3;
+  }
+  .fentreprise {
+    padding: 1em;
+    color: #ffffff;
+    grid-row-start: 2;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .crenseignement {
-    display: grid;
-    grid-template-columns: 1fr;
+  .fTitre {
+    float: left;
+    font-size: 15px;
   }
-}
-
-@media screen and (max-width: 768px) {
-  .ctout {
-    margin: 30px 30px;
-  }
-
-  footer {
-    margin: 30px 30px;
+  .fprenom {
+    float: left;
+    padding-left: 0.25em;
+    font-size: 15px;
+    text-align: center;
   }
 }
