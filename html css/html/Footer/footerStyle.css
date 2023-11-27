@@ -1,6 +1,6 @@
 body {
   margin: 0%;
-  font: 400 16px "Open Sans", Arial, "Helvetica Neue", Helvetica,
+  font: 400 "Open Sans", Arial, "Helvetica Neue", Helvetica,
     "Bitstream Vera Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -10,16 +10,16 @@ body {
 }
 
 #placeholder {
-  width: 1400px;
+  max-width: 1200px;
   margin: auto;
 }
 
-#fBlock {
-  width: 1400px;
+.fBlock {
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   list-style-type: none;
-  margin-top: 20px;
+  margin-top: 3em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -29,9 +29,6 @@ footer {
 }
 
 .fplan {
-  border: 0px solid;
-  /* padding: 15px;
-  padding-left: 30px; */
   color: #ff3a39;
   font-size: 18px;
   text-align: left;
@@ -49,8 +46,7 @@ footer {
 }
 
 .fcnil {
-  border: 0px solid;
-  padding: 10px;
+  padding: 1em;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
@@ -66,13 +62,57 @@ footer {
 }
 
 .fentreprise {
-  border: 0px solid;
-  padding: 15px;
+  padding: 1em;
   color: #ffffff;
   text-align: right;
 }
 
 .fTitre {
   color: #ff3a39;
-  font-size: 20px;
+}
+
+@media screen and (max-width: 750px) {
+  .fBlock {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px 30px;
+  }
+  .fplan {
+    color: #ff3a39;
+    font-size: 18px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    grid-row-start: 1;
+  }
+  .fcnil {
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    grid-row-start: 3;
+  }
+  .fentreprise {
+    padding: 1em;
+    color: #ffffff;
+    grid-row-start: 2;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .fTitre {
+    float: left;
+    font-size: 15px;
+  }
+  .fprenom {
+    float: left;
+    padding-left: 0.25em;
+    font-size: 15px;
+    text-align: center;
+  }
 }
