@@ -116,15 +116,7 @@ header {
   background-color: #ff9292;
   color: #ffffff;
 }
-.p3Decorateur {
-    border-bottom: 2px solid #FF3A39; 
-    margin: 20px 0; 
-  }
 
-  .p3BigBlock{
-    padding:15px;
-    background-color: #FFFFFF;
-  }
 
   #placeholder {
   width: 1400px;
@@ -194,6 +186,15 @@ footer {
   font-size: 20px;
 }
 
+.p3Decorateur {
+  border-bottom: 2px solid #FF3A39; 
+  margin: 20px 0; 
+}
+
+.p3BigBlock{
+  padding:15px;
+  background-color: #FFFFFF;
+}
 
 .p3LittleBlock{
     border:1.5px solid black;
@@ -605,6 +606,3 @@ footer {
   color:#FFFFFF;
   flex-grow:1;
 }
-
-
-
