@@ -680,6 +680,10 @@ footer {
   margin-bottom: auto;
 }
 
+.fplanul{
+  list-style-type: none;
+}
+
 .fplan a {
   color: #ff3a39;
   text-decoration: none;
