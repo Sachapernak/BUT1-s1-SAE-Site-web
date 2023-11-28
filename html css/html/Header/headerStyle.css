@@ -1,5 +1,5 @@
 body {
-  background-color: F5F5F5;
+  background-color: #F5F5F5;
   margin: 0;
   font: 400 16px "Open Sans", Arial, "Helvetica Neue", Helvetica,
     "Bitstream Vera Sans", sans-serif;
@@ -8,16 +8,18 @@ body {
   line-height: normal;
   font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica,
     "Bitstream Vera Sans", sans-serif;
+  max-width: 1400px;
 }
 
 header {
-  margin-bottom: 100px;
+  margin-bottom: 5%;
 }
 
 #hLigne1bgr {
   margin: 0;
   background-color: #ffffff;
 }
+
 #hLigne1 {
   display: grid;
   grid-template-columns: 50% 20% 30%;
@@ -39,16 +41,17 @@ header {
   margin-left: auto;
   margin-right: auto;
   height: 100%;
+  align-items: center;
 }
 
 #hLeft {
   grid-column-start: 1;
-  margin: O;
+  margin: 0;
 }
 #hRight {
   text-align: right;
   grid-column-start: 3;
-  margin: O;
+  margin: 0;
 }
 .hLogo {
   display: inline-flex;
@@ -117,9 +120,57 @@ header {
   color: #ffffff;
 }
 
-@media (max-width:735px) {
+@media only screen and (max-width:1050px) and (min-width:736px) {
+
+  header {
+    margin-bottom: 7%;
+  }
+}
+
+@media only screen and (max-width: 735px) and (min-width: 671px){
   .hNav-Area ul li{
     width:100%;
+  }
+  header {
+    margin-bottom: 30%;
+  }
+  #hLigne2bgr {
+    height: 29%;
+  }
+}
+
+@media only screen and (max-width:671px) and (min-width:600px) {
+  .hNav-Area ul li{
+    width:100%;
+  }
+  header {
+    margin-bottom: 33%;
+  }
+  #hLigne2bgr {
+    height: 30%;
+  }
+}
+
+@media only screen and (max-width:600px) and (min-width:500px) {
+  .hNav-Area ul li{
+    width:100%;
+  }
+  header {
+    margin-bottom: 39%;
+  }
+  #hLigne2bgr {
+    height: 30%;
+  }
+}
+@media only screen and (max-width:500px) and (min-width:400px) {
+  .hNav-Area ul li{
+    width:100%;
+  }
+  header {
+    margin-bottom: 45%;
+  }
+  #hLigne2bgr {
+    height: 30%;
   }
 }
 
