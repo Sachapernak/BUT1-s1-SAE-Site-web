@@ -526,6 +526,7 @@ td {
 
 /* ---------------------------------- p3 PAGE COMPETENCE ---------------------------------- */
 /* ---------------------------------- p4 PAGE CONTACT ---------------------------------- */
+}
 .ctout {
   margin: 50px 200px;
 }
@@ -624,15 +625,36 @@ td {
   width: 100%;
 }
 
-body {
-  margin: 0%;
-  font: 400 "Open Sans", Arial, "Helvetica Neue", Helvetica,
-    "Bitstream Vera Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica,
-    "Bitstream Vera Sans", sans-serif;
+@media screen and (max-width: 1500px) {
+  .ctout {
+    margin: 50px 100px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .cmessage {
+    display: block;
+  }
+
+  .cformulairedroite input {
+    display: none;
+  }
+
+  .cformulaire {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .crenseignement {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ctout {
+    margin: 30px 30px;
+  }
 }
 
 /* ---------------------------------- p4 FOOTER ---------------------------------- */
