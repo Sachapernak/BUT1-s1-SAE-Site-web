@@ -518,7 +518,7 @@ td {
   }
 
   .p2DecoNone {
-    border-bottom: 2px solid #ff3a39;
+    border-bottom: 2px solid grey;
     margin: 20px 0;
   }
 }
