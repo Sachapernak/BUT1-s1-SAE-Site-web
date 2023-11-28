@@ -154,6 +154,7 @@ header {
   #hLigne2bgr {
     height: 29%;
     min-height: 200px;
+    max-height: 220px;
   }
 }
 
@@ -167,6 +168,7 @@ header {
   #hLigne2bgr {
     height: 30%;
     min-height: 200px;
+    max-height: 220px;
   }
 }
 
@@ -180,9 +182,10 @@ header {
   #hLigne2bgr {
     height: 30%;
     min-height: 200px;
+    max-height: 220px;
   }
 }
-@media only screen and (max-width:500px) and (min-width:400px) {
+@media only screen and (max-width:500px) {
   .hNav-Area ul li{
     width:100%;
   }
@@ -190,8 +193,7 @@ header {
     margin-bottom: 45%;
   }
   #hLigne2bgr {
-    height: 30%;
-    min-height: 200px;
+    height: 195px;
   }
 }
 
