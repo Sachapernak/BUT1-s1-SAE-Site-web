@@ -195,6 +195,9 @@ header {
   #hLigne2bgr {
     height: 195px;
   }
+  header {
+    margin-bottom: 200px;
+  }
 }
 
 /* ---------------------------------- p1 INDEX ---------------------------------- */
