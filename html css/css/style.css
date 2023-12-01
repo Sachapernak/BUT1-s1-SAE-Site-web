@@ -525,7 +525,7 @@ header {
 .p1leftB {
   width: 400px;
 }
-#p1comp {
+.p1comp {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
