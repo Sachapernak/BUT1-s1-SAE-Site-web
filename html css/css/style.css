@@ -795,17 +795,13 @@ td {
   text-align: center;
 }
 
-.p3FondPage{
-  max-width:1400px;
-  margin:auto;
-}
 
 .p3AC{
     display:flex;
     align-content: flex-start;
 }
 
-@media screen and (max-width: 599px) and (min-width: 399px) {
+@media screen and (max-width: 599px)  {
   .p3AC{
     flex-flow: column;
   }
@@ -821,6 +817,10 @@ td {
     margin-top: 4px;
     margin-bottom: 4px;
 
+  }
+  .p3FondPage{
+    max-width:600px;
+    margin:auto;
   }
 }
 @media screen and (max-width: 800px) and (min-width: 600px) {
@@ -839,6 +839,10 @@ td {
     margin-top: 4px;
     margin-bottom: 4px;
 
+  }
+  .p3FondPage{
+    max-width:1400px;
+    margin:auto;
   }
 }
 
