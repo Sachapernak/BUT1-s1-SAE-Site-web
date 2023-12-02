@@ -86,6 +86,8 @@ header {
 
 .hNav-Area ul li {
   width: 25%;
+  position: relative;
+  z-index: 9999;
 }
 
 .hNav-Area ul li > ul {
@@ -135,10 +137,6 @@ header {
 .hNav-Area .hDropDown li > a:hover {
   background-color: #ff9292;
   color: #ffffff;
-}
-.hDropDown{
-  position: relative;
-  z-index: 9999;
 }
 
 @media only screen and (max-width: 1050px) and (min-width: 736px) {
