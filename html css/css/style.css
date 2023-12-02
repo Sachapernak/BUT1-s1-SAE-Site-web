@@ -136,6 +136,10 @@ header {
   background-color: #ff9292;
   color: #ffffff;
 }
+.hDropDown{
+  position: relative;
+  z-index: 9999;
+}
 
 @media only screen and (max-width: 1050px) and (min-width: 736px) {
   header {
@@ -832,6 +836,7 @@ td {
   height: 100%;
   margin: auto;
   position: relative;
+  z-index: 1;
 }
 
 .p3PicAC img {
