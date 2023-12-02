@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>BUT - Accueil</title>
-    <link rel="icon" href="./images/Logo-IUT.jpg" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="./css/style.css" >
+    <title>BUT Informatique Toulouse - Accueil</title>
+    <link rel="icon" href="./images/Logo-IUT.jpg" >
+    <meta
+      name="description"
+      content="Le BUT informatique de l'IUT Paul Sabatier vous offre une formation en 3 ans ouverte a l'alternance, afin de faire de vous des professionnels du numérique."
+    >
   </head>
+
   <body>
+    <!---------------------------------->
+    <!--            HEADER            -->
+    <!-- SACHA PERNAK - Arthur COLSON -->
+    <!---------------------------------->
     <header>
       <div id="hLigne1bgr">
         <div id="hLigne1">
           <div id="hLeft">
-            <a href="#"
+            <a href="https://iut.univ-tlse3.fr/"
               ><img
                 class="hLogo"
                 src="./images/Logo-IUT.jpg"
                 alt="Logo de l'IUT Toulouse"
-            /></a>
-            <a href="#"
+            ></a>
+            <a href="https://www.univ-tlse3.fr/"
               ><img
                 class="hLogo"
                 src="./images/logo-UT3.jpg"
                 alt="Logo de l'université paul sabatier"
-            /></a>
+            ></a>
           </div>
           <div id="hRight">
-            <a href="#"><img class="hLogo" src="./images/Logo-Info.jpg" /></a>
+            <a href="https://iut.univ-tlse3.fr/accueil-iut-tlse-3-toulouse"
+              ><img
+                class="hLogo"
+                src="./images/Logo-Info.jpg"
+                alt="Logo du Bachelors universitaires de technologie informatique"
+            ></a>
           </div>
         </div>
       </div>
@@ -34,17 +48,38 @@
         <div id="hLigne2">
           <nav class="hNav-Area">
             <ul>
-              <li><a href="#">Accueil</a></li>
-              <li><a href="#">Présentation du BUT</a></li>
+              <li><a href="./Index.html">Accueil</a></li>
+              <li><a href="./html/page2.html">Le BUT</a></li>
               <li class="hDropDown">
                 <a href="#">Compétences</a>
                 <ul>
-                  <li><a href="#">Compétence 1</a></li>
-                  <li><a href="#">Compétence 2</a></li>
-                  <li><a href="#">Compétence 3</a></li>
+                  <li>
+                    <a href="./html/page3Competence1.html"
+                      >Développement d'application</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./html/page3Competence2.html"
+                      >Optimiser des applications</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./html/page3Competence3.html"
+                      >Administrer des systèmes
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./html/page3Competence4.html">Gérer des données</a>
+                  </li>
+                  <li>
+                    <a href="./html/page3Competence5.html"
+                      >Conduire un Projet</a
+                    >
+                  </li>
+                  <li><a href="./html/page3Competence6.html">Collaborer</a></li>
                 </ul>
               </li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="./html/page4.html">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -57,21 +92,26 @@
           class="p1imgA"
           src="./images/BUTimg.png"
           alt="Logo du BUT avec inscrit 'BUT Controlé par l'état'"
-        />
+        >
       </div>
       <div class="p1right">
+        <h1 class="p1h1">Le BUT</h1>
         <p class="p1para">
           &emsp; <b class="p1bold">Le</b>
-          <strong class="p1bold">Bachelor universitaire de technologie </strong>
-          est une nouvelle formation en 3 ans, instauré en 2019. Après avoir
+          <strong class="p1bold">
+            Bachelor universitaire de technologie
+          </strong>
+          est une nouvelle formation en 3 ans (6 semestres) instauré en 2019. Après avoir
           coexisté avec le DUT qui s'effectuait alors en deux ans, le BUT
-          remplace le DUT en 2021. Le DUT devient alors un diplome utile
+          remplace le DUT en 2021. Le DUT devient alors un diplôme utile
           uniquement pour une suite d'étude, et est maintenant délivré
-          uniquement sur demande. Les BUT se deroulent dans les Instituts
+          uniquement sur demande. Les BUT se déroulent dans les Instituts
           universitaire de technologie. Cette formation est tout
-          particulièrement adapté a une professionalisation, notamment grace a
-          l'alternance, mais peut aussi permettre d'acceder a une suite d'étude
-          dans d'autres écoles du supérieur, tel que les écoles d'ingénieurs.
+          particulièrement adapté a une professionnalisation, notamment grâce à
+          l'alternance dès la deuxième année, mais peut aussi permettre d'accéder a une poursuite d'étude
+          dans d'autres écoles du supérieur, telles que les écoles d'ingénieurs. Le volume horaire moyen de cette formation
+          est de 32h par semaines avec des travaux pratiques, des travaux dirigés, des cours magistraux, mais aussi des projets
+          pour mieux se confronter à son futur métier.
         </p>
         <p class="p1para">
           Sources :
@@ -91,19 +131,18 @@
 
     <div id="p1iut">
       <div class="p1left3">
-        <a
-          id="p1IUTimg"
-          href="https://iut-informatique.univ-tlse3.fr/"
-          alt="Photo de la facade de l'iut info de toulouse. Lien vers le site de l'iut"
-          ><img
+        <a id="p1IUTimg" href="https://iut-informatique.univ-tlse3.fr/">
+          <img
             class="p1imgA"
             src="./images/PhotoIUT.jpg"
-            alt="Logo du BUT avec inscrit 'BUT Controlé par l'état'"
-        /></a>
+            alt="Facade du batiement accueillant le département infromatique de l'IUT Paul Sabatier'"
+          >
+        </a>
       </div>
       <div class="p1right">
+        <h2 class="p1h1">Le département informatique de l'IUT Paul Sabatier</h2>
         <p class="p1para">
-          &emsp; Créé en 1967, le département Informatique accueille chaque
+          &emsp; Créé en 1967, le département Info accueille chaque
           année 168 étudiants en première année du BUT. Le Bachelor
           Universitaire de Technologie Informatique permet d'acquérir les
           connaissances et les compétences pour le développement, l'analyse et
@@ -117,10 +156,10 @@
         </p>
         <div id="p1contact">
           <div id="p1contact0">
-            <b class="p1bold">Contact:</b>
+            <b class="p1bold p1txt">Contact:</b>
           </div>
           <div id="p1contact1">
-            <ul>
+            <ul class="p1txt">
               <li><b class="p1bold2">IUT Paul Sabatier</b></li>
               <li>Département informatique</li>
               <li>133 B, Avenue de Rangueuil</li>
@@ -128,7 +167,7 @@
             </ul>
           </div>
           <div id="p1contact2">
-            <ul>
+            <ul class="p1txt">
               <li><b class="p1bold2">Secrétariat</b></li>
               <li>E-mail: info.contact@iut-tlse3.fr</li>
               <li>Tél.: 05 62 25 87 61</li>
@@ -140,49 +179,35 @@
 
     <div class="p1separateur"></div>
 
-    <div id="p1comp">
-      <div class="p1compblck">
-        <div class="p1leftcomp">
-          <img
-            class="p1imgA"
-            src="./images/p2Competence2.jpg"
-            alt="Illustration d'un compétence"
-          />
-        </div>
-        <div class="p1right">
-          <ul>
-            <li>
-              <b class="p1bold"
-                >Compétence 1 : Réaliser un développement d'application</b
-              >
-            </li>
-            <li>Développer des applications informatiques simples</li>
-            <li>
-              Partir des exigences et aller jusqu'a une application complète
-            </li>
-            <li>Adapter des applications sur un ensemble de supports</li>
-          </ul>
-        </div>
+    <div class="p1comp">
+      <div class="p1redbgr">
+        <h2 class="p1h2">
+          Les compétences développées au cours de notre formation Informatique :
+        </h2>
       </div>
+    </div>
 
+    <div class="p1comp">
       <div class="p1compblck">
         <div class="p1leftcomp">
           <img
             class="p1imgA"
             src="./images/p2Competence1.jpg"
-            alt="Illustration d'un compétence"
-          />
+            alt="Illustration du developpement d'application"
+          >
         </div>
         <div class="p1right">
-          <ul>
+          <ul class="p1txt">
             <li>
-              <b class="p1bold">Compétence 2 : Optimiser des applications</b>
+              <b class="p1bold"
+                >Compétence 1 : Réaliser un développement d'application</b
+              >
             </li>
-            <li>Appréhender et construire des algorithmes</li>
+            <li>-Développer des applications informatiques simples</li>
             <li>
-              Sélectionner les algorithmes adéquats pour répondre a un problème
+              -Partir des exigences et aller jusqu'a une application complète
             </li>
-            <li>Analyser et optimiser des applications</li>
+            <li>-Adapter des applications sur un ensemble de supports</li>
           </ul>
         </div>
       </div>
@@ -191,22 +216,20 @@
         <div class="p1leftcomp">
           <img
             class="p1imgA"
-            src="./images/p2Competence4.jpeg"
-            alt="Illustration d'un compétence"
-          />
+            src="./images/p2Competence2.jpg"
+            alt="Illustration de l'optimisation d'applications"
+          >
         </div>
         <div class="p1right">
-          <ul>
+          <ul class="p1txt">
             <li>
-              <b class="p1bold"
-                >Compétence 3 : Administrer des systèmes informatiques</b
-              >
+              <b class="p1bold">Compétence 2 : Optimiser des applications</b>
             </li>
-            <li>Installer et configurer un poste de travail</li>
-            <li>Déployer des services dans une architecture réseau</li>
+            <li>-Appréhender et construire des algorithmes</li>
             <li>
-              Faire évoluer et maintenir un systèmes informatique comunicant
+              -Sélectionner les algorithmes adéquats pour répondre a un problème
             </li>
+            <li>-Analyser et optimiser des applications</li>
           </ul>
         </div>
       </div>
@@ -216,19 +239,43 @@
           <img
             class="p1imgA"
             src="./images/p2Competence3.png"
-            alt="Illustration d'un compétence"
-          />
+            alt="Illustration d'administration systèmes"
+          >
         </div>
         <div class="p1right">
-          <ul>
+          <ul class="p1txt">
+            <li>
+              <b class="p1bold"
+                >Compétence 3 : Administrer des systèmes informatiques</b
+              >
+            </li>
+            <li>-Installer et configurer un poste de travail</li>
+            <li>-Déployer des services dans une architecture réseau</li>
+            <li>
+              -Faire évoluer et maintenir un systèmes informatique comunicant
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="p1compblck">
+        <div class="p1leftcomp">
+          <img
+            class="p1imgA"
+            src="./images/p2Competence4.jpeg"
+            alt="Illustration de gestion des données"
+          >
+        </div>
+        <div class="p1right">
+          <ul class="p1txt">
             <li>
               <b class="p1bold"
                 >Compétence 4 : Gérer des données de l'information</b
               >
             </li>
-            <li>Concevoir et mettre en place une base de données</li>
-            <li>Optimiser une base de données, intéragir et sécuriser</li>
-            <li>Administrer une base de données</li>
+            <li>-Concevoir et mettre en place une base de données</li>
+            <li>-Optimiser une base de données, intéragir et sécuriser</li>
+            <li>-Administrer une base de données</li>
           </ul>
         </div>
       </div>
@@ -238,17 +285,18 @@
           <img
             class="p1imgA"
             src="./images/p2Competence5.png"
-            alt="Illustration d'un compétence"
-          />
+            alt="Illustration de gestion de projet"
+          >
         </div>
         <div class="p1right">
-          <ul>
+          <ul class="p1txt">
             <li><b class="p1bold">Compétence 5 : Conduire un projet</b></li>
-            <li>Identifier les besoins des clients et utilisateurs</li>
+            <li>-Identifier les besoins des clients et utilisateurs</li>
             <li>
-              Appliquer une démarche de suivi de projet en fonctions des besoins
+              -Appliquer une démarche de suivi de projet en fonctions des
+              besoins
             </li>
-            <li>Participer à la conception et mise en oeuvre d'un projet</li>
+            <li>-Participer à la conception et mise en oeuvre d'un projet</li>
           </ul>
         </div>
       </div>
@@ -258,21 +306,21 @@
           <img
             class="p1imgA"
             src="./images/p2Competence6.jpg"
-            alt="Illustration d'un compétence"
-          />
+            alt="Illustration de collaboration en équipe"
+          >
         </div>
         <div class="p1right">
-          <ul>
+          <ul class="p1txt">
             <li>
               <b class="p1bold"
                 >Compétence 6 : Collaborer au sein d'une équipe informatique</b
               >
             </li>
-            <li>Identifier ses aptitudes pour travailler dans une équipe</li>
+            <li>-Identifier ses aptitudes pour travailler dans une équipe</li>
             <li>
-              Situer son rôle et ses messions au sein d'une équipe informatique
+              -Situer son rôle et ses messions au sein d'une équipe informatique
             </li>
-            <li>Manager une équipe informatique</li>
+            <li>-Manager une équipe informatique</li>
           </ul>
         </div>
       </div>
@@ -280,16 +328,22 @@
 
     <div class="p1separateur"></div>
 
+    <div class="p1comp">
+      <div class="p1greybgr">
+        <h3 class="p1h2">La vie etudiante au sein de l'IUT</h3>
+      </div>
+    </div>
+
     <div id="p1etu">
       <div class="p1left2">
         <p class="p1para">
           Le saviez vous ? Bien que non-obligatoire,
-          <b class="p1bold">le sport s'invite aussi a l'IUT!</b><br />
+          <b class="p1bold">le sport s'invite aussi a l'IUT!</b><br >
           Le pole sport c'est, entre autres, plus de 40 activités sportives et
           artistiques auxquelles participent plus de 5 000 étudiants et
           personnels, différents types de formations (personnelle, validante et
           qualifiante) ainsi que des aménagements pour les sportifs de bon ou
-          haut niveau national, ou en situation de handicap. <br />Vous pouvez
+          haut niveau national, ou en situation de handicap. <br >Vous pouvez
           des a présent vous rendre sur notre site dédié afin découvrir toutes
           les
           <b class="p1bold"> informations clés, en cliquant sur l'image !</b>
@@ -301,39 +355,42 @@
             class="p1imgA"
             src="./images/Sport.jpg"
             alt="Image d'Illustration de sport, cadrant les chaussure d'une personne en train de courrir sur une piste"
-        /></a>
+        ></a>
       </div>
     </div>
 
     <footer>
       <div class="fBlock">
         <div class="fplan">
-          <li>
-            <a href="/html css/html/page (1)/page1.html">Acceuil</a><br />
-            <a href="/html css/html/page (2)/page2.html">Présentation du BUT</a
-            ><br />
-            <a href="/html css/html/page (3)/page3Competence1.html"
-              >Compétences</a
-            ><br />
-            <a href="/html css/html/page (4)/page4.html">Contact</a>
-          </li>
+          <ul class="fplanul">
+            <li>
+              <a href="../Index.html">Acceuil</a><br >
+              <a href="./page2.html">Le BUT</a><br >
+              <a href="./page3Competence1.html">Compétences</a><br >
+              <a href="./page4.html">Contact</a>
+            </li>
+          </ul>
         </div>
         <div class="fcnil">
-          <li>
-            <a
-              href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees"
-              >CNIL - RGPD</a
-            >
-          </li>
+          <ul>
+            <li>
+              <a
+                href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees"
+                >CNIL - RGPD</a
+              >
+            </li>
+          </ul>
         </div>
         <div class="fentreprise">
-          <li>
-            <p class="fTitre">M.A.S.A. Associates</p>
-            <p class="fprenom">Maxime LACOSTE</p>
-            <p class="fprenom">Antoine VAURIN</p>
-            <p class="fprenom">Sacha PERNAK</p>
-            <p class="fprenom">Arthur COLSON</p>
-          </li>
+          <ul class="fentrepriseul">
+            <li>
+              <p class="fTitre">M.A.S.A. Associates</p>
+              <p class="fprenom">Maxime LACOSTE</p>
+              <p class="fprenom">Antoine VAURIN</p>
+              <p class="fprenom">Sacha PERNAK</p>
+              <p class="fprenom">Arthur COLSON</p>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
